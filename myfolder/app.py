@@ -2,17 +2,22 @@ import streamlit as st
 import pandas as pd
 import pickle
 import json
-import json
 
-with open("food_mapping.json") as f:
+# ✅ Load food mapping only ONCE
+with open("food_mapping.json", "r") as f:
     food_mapping = json.load(f)
 
-print(food_mapping["vitamin_d"])
-# Load model and food mapping
+# ✅ Debug print if needed
+print("DEBUG:", food_mapping["vitamin_d"])
+
+# ✅ Load your model
 with open('vitamin_model.pkl', 'rb') as f:
     model = pickle.load(f)
-with open('food_mapping.json', 'r') as f:
-    food_mapping = json.load(f)
+
+
+
+# You can use food_mapping and model below...
+
 
 st.title("Athlete Vitamin D Deficiency Prediction")
 st.write("Enter details to predict Vitamin D deficiency and get food recommendations.")
