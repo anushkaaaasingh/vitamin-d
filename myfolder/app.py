@@ -2,7 +2,12 @@ import streamlit as st
 import pandas as pd
 import pickle
 import json
+import json
 
+with open("food_mapping.json") as f:
+    food_mapping = json.load(f)
+
+print(food_mapping["vitamin_d"])
 # Load model and food mapping
 with open('vitamin_model.pkl', 'rb') as f:
     model = pickle.load(f)
