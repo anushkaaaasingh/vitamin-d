@@ -1,4 +1,4 @@
-     {
-         "vitamin_d": ["Salmon", "Mackerel", "Egg yolks", "Fortified milk", "Mushrooms"]
-     }
-    
+{
+  "vitamin_d": ["Salmon", "Mackerel", "Egg yolks", "Fortified milk", "Mushrooms"],
+  "vitamin_c": ["Oranges", "Strawberries", "Bell peppers"]
+}
