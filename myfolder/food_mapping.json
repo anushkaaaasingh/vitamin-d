@@ -1,0 +1,4 @@
+     {
+         "vitamin_d": ["Salmon", "Mackerel", "Egg yolks", "Fortified milk", "Mushrooms"]
+     }
+     !mv /content/food_mapping.json /content/drive/MyDrive/
