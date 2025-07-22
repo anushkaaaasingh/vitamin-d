@@ -43,5 +43,3 @@ if st.button("Predict"):
     else:
         st.write("**Prediction**: No Vitamin D deficiency")
 
-# Save to Drive
-!mv /content/app.py /content/drive/MyDrive/
